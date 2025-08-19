@@ -7,7 +7,9 @@ export default function App() {
   return (
     <div className="relative min-h-screen text-white">
       <video className="fixed inset-0 w-full h-full object-cover -z-10" autoPlay muted loop playsInline>
-        <source src="/src/assets/hero.mp4" type="video/mp4" />
+        {/* <source src="/src/assets/hero.mp4" type="video/mp4" /> */}
+        <source src="/hero.mp4" type="video/mp4" />
+
       </video>
       <div className="fixed inset-0 bg-black/60 -z-10" />
       <Header onBook={() => setOpen(true)} />
